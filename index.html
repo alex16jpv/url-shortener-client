@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener - Shorten Your URLs with Ease!</title>
+    <meta
+      name="description"
+      content="Shorten your URLs with ease! Enter your long URL and get a shortened version in seconds."
+    />
+    <meta
+      name="keywords"
+      content="URL shortener, shorten URLs, shorten links, link shortener"
+    />
+    <meta name="author" content="Your Name Here" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>URL Shortener</h1>
+    </header>
+    <main>
+      <section>
+        <article>
+          <form>
+            <label for="url">Enter URL to shorten:</label>
+            <input
+              type="url"
+              id="url"
+              name="url"
+              required
+              aria-label="URL input"
+            />
+            <button type="submit">Shorten URL</button>
+          </form>
+        </article>
+      </section>
+      <section id="short-url">
+        <article>
+          <h2>Shortened URL:</h2>
+          <input type="text" id="shortened-url" readonly />
+          <button id="copy-btn">Copy</button>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
