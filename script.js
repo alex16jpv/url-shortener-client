@@ -70,6 +70,9 @@
     shortenedUrlField.select();
     document.execCommand("copy");
     copyButton.innerText = "Copied!";
+    setTimeout(() => {
+      copyButton.innerText = "Copy";
+    }, 3000);
   };
 
   /**
