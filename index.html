@@ -17,33 +17,25 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <header>
-      <h1>URL Shortener</h1>
-    </header>
-    <main>
-      <section>
-        <article>
-          <form>
-            <label for="url">Enter URL to shorten:</label>
-            <input
-              type="url"
-              id="url"
-              name="url"
-              required
-              aria-label="URL input"
-            />
-            <button type="submit">Shorten URL</button>
-          </form>
-        </article>
-      </section>
-      <section id="short-url">
-        <article>
-          <h2>Shortened URL:</h2>
-          <input type="text" id="shortened-url" readonly />
-          <button id="copy-btn">Copy</button>
-        </article>
-      </section>
-    </main>
+    <h1>URL Shortener</h1>
+    <div class="container">
+      <form>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          class="url-input"
+          placeholder="Enter URL to shorten"
+          required
+          aria-label="URL input"
+        />
+        <button class="shorten-btn" type="submit">Shorten URL</button>
+      </form>
+      <div class="shortened-url-container">
+        <input class="shortened-url" type="text" id="shortened-url" readonly />
+        <button class="copy-btn" id="copy-btn">Copy</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

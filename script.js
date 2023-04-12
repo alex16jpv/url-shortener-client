@@ -36,8 +36,8 @@
    */
   const displayShortenedUrl = (url) => {
     shortenedUrlField.value = url;
-    const shortUrlSection = document.querySelector("#short-url");
-    shortUrlSection.style.display = "block";
+    const shortUrlSection = document.querySelector(".shortened-url-container");
+    shortUrlSection.style.display = "flex";
   };
 
   /**
